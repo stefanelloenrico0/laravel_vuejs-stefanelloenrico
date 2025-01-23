@@ -6,6 +6,9 @@ import { createInertiaApp } from '@inertiajs/vue3'
 import PrimeVue from 'primevue/config';
 import Aura from '@primevue/themes/aura';
 
+/* FONT AWESOME */
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
 createInertiaApp({
     resolve: name => {
         const pages = import.meta.glob('./Pages/**/*.vue', { eager: true })
@@ -13,6 +16,7 @@ createInertiaApp({
     },
     setup({ el, App, props, plugin }) {
         createApp({ render: () => h(App, props) })
+            .component('fa-icon', FontAwesomeIcon)
             .use(plugin)
             .use(PrimeVue, {
                 theme: {
