@@ -1,9 +1,65 @@
+@import "primeicons/primeicons.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import "primeicons/primeicons.css";
+:root {
+    --default-web-color: #89cdc4;
+    --color-white: #ffffff;
+}
 
+
+body{
+    background-color: #eeecec;
+
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+body *{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
 #userDrawerActions{
     gap: 20px;
+}
+#drawerSelections{
+    margin-top: 3rem;
+}
+#cardsContainer{
+    gap: 2rem;
+    padding: 0 3rem;
+}
+.homeCards{
+    background: #FFF;
+    aspect-ratio: 2/1;
+    justify-content: center;
+}
+.homeCards:hover{
+    transform: scale(1.06);
+    background-color: var(--default-web-color);
+    color: var(--color-white);
+    transition: 0.5s ease-in-out;
+}
+.homeCards svg{
+    font-size: 3rem;
+}
+.homeCards h2{
+    font-size: 2rem;
+}
+
+.drawerElements ul.list-none{
+    margin-top: 2rem;
+}
+.drawerElements a{
+    gap: 0.6rem;
+    margin-bottom: 5px;
+}
+.drawerElements a i, .drawerElements a span{
+    font-size: 1.2rem;
 }

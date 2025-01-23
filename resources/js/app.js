@@ -7,7 +7,10 @@ import PrimeVue from 'primevue/config';
 import Aura from '@primevue/themes/aura';
 
 /* FONT AWESOME */
+import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+library.add(fas);
 
 createInertiaApp({
     resolve: name => {
