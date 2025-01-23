@@ -37,6 +37,7 @@
             <div id="cardsContainer" class="grid grid-cols-4 gap-4">
                 <div :id="'card_'+card.id" class="flex flex-col" v-for="card in cardsMenu" :key="card.id">
                     <div v-html="card.icon" />
+                    <i class="far fa-user" />
                 </div>
             </div>
         </div>
