@@ -22,6 +22,7 @@
                 <i id="user" class="pi pi-user cursor-pointer" @click="userDetails"></i>
                 <i id="logout" class="pi pi-sign-out cursor-pointer hover:bg-siteDefault" @click="logoutUser"></i>
             </div>
+            <div id="pagesMenu" class="w-full flex justify-start"></div>
         </Drawer>
     </div>
 </template>
