@@ -7,7 +7,7 @@
 
 
 :root {
-    --default-web-color: #89cdc4;
+    --default-web-color: #408EC6;
     --color-white: #ffffff;
 }
 
@@ -26,6 +26,21 @@ body *{
     font-weight: normal;
     font-style: normal;
 }
+#titleHomepage{
+    font-size: 5rem;
+}
+#titleHomepage b{
+    color: var(--default-web-color);
+    font-size: 8rem;
+    font-weight: 700;
+}
+#rowButtonsHome{
+    gap: 1.5rem;
+}
+#rowButtonsHome button{
+    border-radius: 0 !important;
+}
+
 #userDrawerActions{
     gap: 20px;
 }
