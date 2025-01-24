@@ -5,6 +5,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
     --default-web-color: #89cdc4;
     --color-white: #ffffff;
